@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import TONLink from '../assets/webp/TonLink.webp'
+import TONLinkDes from '../assets/webp/TonLink.webp'
+import TONLinkMob from '../assets/webp/TONLinkMob.webp'
 import Telegram from '../assets/webp/Telegram Logo.webp'
 
 const Header = styled.div`
@@ -9,9 +10,19 @@ const Header = styled.div`
     margin-top: 10px;
 `
 
-const TONLogo = styled.img`
+const TONLogo = styled.svg <{iconDes: string, iconMob: string}>`
     width: 135px;
     height: 35px;
+    background: url(${props => props.iconDes});
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 500px) {
+        width: 40px;
+        height: 40px;
+        background: url(${props => props.iconMob});
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 `
 
 const TelegramLogo = styled.img`
@@ -23,7 +34,7 @@ const TelegramLogo = styled.img`
 export const MainHeader = () => {
     return(
         <Header>
-            <TONLogo src={TONLink}/>
+            <TONLogo iconDes={TONLinkDes} iconMob={TONLinkMob}/>
             <TelegramLogo src={Telegram}/>
         </Header>
     )

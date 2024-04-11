@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MainHeader } from "./Header";
 import { Block1 } from "./Blocks/Block1";
+import { Block2 } from "./Blocks/Block2";
 
 
 const Container = styled.div`
@@ -9,6 +10,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
     @media (max-width: 1000px) {
         width: 90%;
     }
@@ -21,6 +23,7 @@ export const MainIndex = () => {
         <Container>
             <MainHeader/>
             <Block1/>
+            <Block2/>
         </Container>
     )
 }

@@ -10,10 +10,14 @@ const Container = styled.div`
 `
 
 
-const Gif1 = styled.img`
+const Gif = styled.img`
     width: 250px;
     height: 250px;
     margin-top: 100px;
+    @media (max-width: 500px) {
+        width: 150px;
+        height: 150px;
+    }
 `
 
 const TextBlock = styled.div`
@@ -67,6 +71,9 @@ const Button = styled.button`
     border: none;
     margin-top: 30px;
     font-family: 'Inter', sans-serif;
+    @media (max-width: 500px) {
+        padding: 9px 55px;
+    }
 `
 
 const Link = styled.a`
@@ -74,12 +81,15 @@ const Link = styled.a`
     color: #fff;
     font-weight: 500;
     text-decoration: none;
+    @media (max-width: 500px) {
+        font-size: 17px;
+    }
 `
 
 export const Block1 = () => {
     return (
         <Container>
-            <Gif1 src={Sticker1} />
+            <Gif src={Sticker1} />
             <TextBlock>
                 <MainText>
                     Empowering
