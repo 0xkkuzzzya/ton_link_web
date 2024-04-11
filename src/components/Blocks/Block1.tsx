@@ -64,7 +64,7 @@ const Descriprion = styled.h1`
 `
 
 const Button = styled.button`
-    padding: 10px 55px;
+    padding: 10px 60px;
     background: #027bfe;
     border-radius: 30px;
     outline: none;
