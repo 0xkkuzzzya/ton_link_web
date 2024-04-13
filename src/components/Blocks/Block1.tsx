@@ -108,7 +108,7 @@ export const Block1 = () => {
                 </Descriprion>
             </TextBlock>
             <Button>
-                <Link>Intergrate</Link>    
+                <Link>Integrate</Link>    
             </Button>
         </Container>
     )
