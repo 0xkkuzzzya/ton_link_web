@@ -71,6 +71,10 @@ const Button = styled.button`
     border: none;
     margin-top: 30px;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    &:active{
+        transform: scale(0.98);
+    }
     @media (max-width: 500px) {
         padding: 9px 55px;
     }

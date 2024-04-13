@@ -35,7 +35,9 @@ export const MainHeader = () => {
     return(
         <Header>
             <TONLogo iconDes={TONLinkDes} iconMob={TONLinkMob}/>
-            <TelegramLogo src={Telegram}/>
+            <a style={{marginLeft: "auto"}} href="https://t.me/tonlink_en" target="_blank">
+                <TelegramLogo src={Telegram}/>
+            </a>
         </Header>
     )
 }
