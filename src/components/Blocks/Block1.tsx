@@ -101,7 +101,7 @@ export const Block1 = () => {
                     Data Integrity
                 </MainText>
                 <Descriprion>
-                    TON Link is the first oracle network
+                    Tonlink is the first oracle network
                     operating on TON blockchain,
                     allowing smart contracts on TON to
                     be smarter and more secure.

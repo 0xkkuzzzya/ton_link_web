@@ -10,19 +10,20 @@ const Header = styled.div`
     margin-top: 10px;
 `
 
-const TONLogo = styled.svg <{iconDes: string, iconMob: string}>`
-    width: 135px;
-    height: 35px;
-    background: url(${props => props.iconDes});
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media (max-width: 500px) {
-        width: 40px;
-        height: 40px;
-        background: url(${props => props.iconMob});
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const TONLogo = styled.img`
+    width: 40px;
+    height: 40px;
+`
+
+const Name = styled.a`
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
 `
 
 const TelegramLogo = styled.img`
@@ -32,11 +33,14 @@ const TelegramLogo = styled.img`
 `
 
 export const MainHeader = () => {
-    return(
+    return (
         <Header>
-            <TONLogo iconDes={TONLinkDes} iconMob={TONLinkMob}/>
-            <a style={{marginLeft: "auto"}} href="https://t.me/tonlink_en" target="_blank">
-                <TelegramLogo src={Telegram}/>
+            <LogoContainer>
+                <TONLogo src={TONLinkMob} />
+                <Name>Tonlink</Name>
+            </LogoContainer>
+            <a style={{ marginLeft: "auto" }} href="https://t.me/tonlink_en" target="_blank">
+                <TelegramLogo src={Telegram} />
             </a>
         </Header>
     )

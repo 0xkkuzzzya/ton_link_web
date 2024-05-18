@@ -86,9 +86,9 @@ export const Block2 = () => {
         query: "(max-device-width: 500px)",
     });
 
-    const block1Des = <> Build your TON Apps on TON Link Protocol </>
+    const block1Des = <> Build your TON Apps on Tonlink Protocol </>
 
-    const block1Mob = <> Build your TON Apps on  <br/> TON Link Protocol </>
+    const block1Mob = <> Build your TON Apps on  <br/> Tonlink Protocol </>
 
     return (
         <Container>
@@ -127,7 +127,7 @@ export const Block2 = () => {
                     <Descriprion>
                         $TL is the deflationary native token of TON
                         Link, used in payments to oracle nodes and
-                        staking in TONLink nodes. This is the first
+                        staking in Tonlink nodes. This is the first
                         token on the TON blockchain that has a built-
                         in application utility.
                     </Descriprion>
